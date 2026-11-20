@@ -53,7 +53,10 @@ We will start by exploring the distribution of our variables.
 **Question 1** _Create histograms for LST, NDVI, impervious surface, tree cover, precipitation, slope, and elevation. Based on these graphs, assess the normality of these variables._
 
 ```{r}
-#Code goes here.
+par(mfrow = c(1, 3))
+hist(lab6_data$lst_c)
+hist(lab6_data$ndvi)
+hist(lab6_data$)
 ```
 
 {Your assessment of the variables' normality goes here.}
@@ -61,7 +64,7 @@ We will start by exploring the distribution of our variables.
 **Question 2** _Use tmap to map these same variables using "fisher" as the classification method/style. For an extra challenge, use `tmap_arrange` to plot all maps in a single figure._
 
 ```{r}
-
+map <- st_read("data/lab6_gee_lstdata.gpkg") 
 ```
 
 
